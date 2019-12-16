@@ -12,5 +12,9 @@
   "devDependencies": {
     "cli-clear": "^1.0.4",
     "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "mssql": "^6.0.1",
+    "mysql": "^2.17.1"
   }
 }
