@@ -17,6 +17,7 @@ cache[Symbol.iterator] = function* () {
 }
 
 const check = (line = "") => {
+  console.log(line);
   let result;
   if (line.includes(" A? "))
     result = line.split(" A? ")[1].split(" ")[0];
@@ -33,7 +34,7 @@ const check = (line = "") => {
   let i = 0;
   for(let [domain, amount] of cache) {
     if(i++ === max) break;
-    console.log("Platz %s:\t%s:\t%s", amount, domain)
+    console.log("Platz %s:\t%s Aufruf(e)\t%s", i, amount, domain)
   }
   return;
   for(let j=i;j<10;j++) {
