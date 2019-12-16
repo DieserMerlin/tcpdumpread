@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const fs = require("fs");
 
 if(!fs.existsSync("config.js")) {
-  fs.writeFileSync("config.js", "module.exports = {\n\tdatabase: {\n\t\thost: '',\n\t\t\tuser: '',\n\t\t\tpassword: '',\n\t\t\tpassword: ''\n\t}\n};\n");
+  fs.writeFileSync("config.js", "module.exports = {\n\tdatabase: {\n\t\thost: '',\n\t\t\tuser: '',\n\t\t\tpassword: '',\n\t\t\tdatabase: ''\n\t}\n};\n");
   console.log("Config file created. Please fill with data and restart.");
   process.exit();
 }
